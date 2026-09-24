@@ -10,24 +10,32 @@ body{
 margin:0;
 font-family:Arial,sans-serif;
 background:#111;
-color:#fff
+color:#fff;
 }
 
 header{
-padding:70px 20px;
+padding:40px 20px;
 text-align:center;
-background:#181818
+background:#181818;
+}
+
+header img{
+display:block;
+margin:0 auto 20px;
+max-width:220px;
+max-height:220px;
+border-radius:12px;
 }
 
 h1{
 font-size:42px;
 margin:0 0 12px;
-text-transform:uppercase
+text-transform:uppercase;
 }
 
 p{
 color:#ccc;
-font-size:18px
+font-size:18px;
 }
 
 .btn{
@@ -38,40 +46,38 @@ background:#e11;
 color:#fff;
 text-decoration:none;
 border-radius:8px;
-font-weight:bold
+font-weight:bold;
 }
 
 .wrap{
 max-width:1000px;
 margin:auto;
-padding:45px 20px
+padding:45px 20px;
 }
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:18px
+gap:18px;
 }
 
 .card{
 background:#1c1c1c;
 padding:25px;
-border-radius:12px
+border-radius:12px;
 }
 
 .gallery{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:10px
+gap:10px;
 }
 
-.ph{
+.gallery img{
+width:100%;
 height:180px;
-background:#292929;
+object-fit:cover;
 border-radius:10px;
-display:grid;
-place-items:center;
-color:#777
 }
 
 @media(max-width:600px){
@@ -84,11 +90,17 @@ h1{font-size:31px}
 <body>
 
 <header>
+
+<img src="rafet.jpeg" alt="Rafet Ustam Spor Kulübü logosu">
+
 <h1>Rafet Ustam Spor Kulübü</h1>
+
 <p>Güç • Disiplin • Mücadele</p>
 
 <a class="btn" href="tel:+905301748341">Bizi Ara</a>
+
 <a class="btn" href="https://wa.me/905301748341">WhatsApp</a>
+
 </header>
 
 <main class="wrap">
@@ -112,15 +124,20 @@ Teknik, kondisyon ve disiplin odaklı antrenmanlar.
 </p>
 </div>
 
+</div>
+
 <h2>Galeri</h2>
 
 <div class="gallery">
-<div class="ph">Fotoğraf 1</div>
-<div class="ph">Fotoğraf 2</div>
-<div class="ph">Fotoğraf 3</div>
-<div class="ph">Fotoğraf 4</div>
-<div class="ph">Fotoğraf 5</div>
-<div class="ph">Fotoğraf 6</div>
+
+<img src="16.jpeg" alt="Kulüp antrenmanı">
+
+<img src="IMG-20240823-WA0026.jpg" alt="Kulüp fotoğrafı">
+
+<img src="WhatsApp%20Image%202026-09-24%20at%2013.00.56.jpeg" alt="Yeni kulüp fotoğrafı">
+
+<img src="WhatsApp%20Image%202026-09-04%20at%2012.25.57.jpeg" alt="Kulüp afişi">
+
 </div>
 
 <h2>İletişim</h2>
