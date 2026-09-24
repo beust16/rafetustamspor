@@ -6,35 +6,37 @@
 <title>Rafet Ustam Spor Kulübü</title>
 
 <style>
+*{box-sizing:border-box}
+
 body{
 margin:0;
 font-family:Arial,sans-serif;
-background:#111;
+background:#0d0d0d;
 color:#fff;
 }
 
 header{
-padding:40px 20px;
 text-align:center;
+padding:45px 20px;
 background:#181818;
 }
 
-header img{
+.logo{
+width:220px;
+height:220px;
+object-fit:contain;
 display:block;
-margin:0 auto 20px;
-max-width:220px;
-max-height:220px;
-border-radius:12px;
+margin:0 auto 25px;
+border-radius:15px;
 }
 
 h1{
 font-size:42px;
-margin:0 0 12px;
-text-transform:uppercase;
+margin:0 0 10px;
 }
 
-p{
-color:#ccc;
+header p{
+color:#bbb;
 font-size:18px;
 }
 
@@ -42,47 +44,98 @@ font-size:18px;
 display:inline-block;
 padding:14px 22px;
 margin:8px;
-background:#e11;
-color:#fff;
+background:#e00000;
+color:white;
 text-decoration:none;
 border-radius:8px;
 font-weight:bold;
 }
 
-.wrap{
+.container{
 max-width:1000px;
 margin:auto;
 padding:45px 20px;
 }
 
+h2{
+font-size:30px;
+margin-top:45px;
+}
+
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:18px;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
 }
 
 .card{
-background:#1c1c1c;
+background:#1b1b1b;
 padding:25px;
 border-radius:12px;
 }
 
+.card h3{
+font-size:22px;
+}
+
+.card p{
+color:#ccc;
+line-height:1.6;
+}
+
 .gallery{
 display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:10px;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
 }
 
 .gallery img{
 width:100%;
-height:180px;
+height:300px;
 object-fit:cover;
-border-radius:10px;
+border-radius:12px;
+display:block;
+}
+
+.contact{
+background:#181818;
+padding:25px;
+border-radius:12px;
+}
+
+.contact a{
+color:white;
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#777;
 }
 
 @media(max-width:600px){
-h1{font-size:31px}
-.gallery{grid-template-columns:1fr 1fr}
+
+h1{
+font-size:30px;
+}
+
+.logo{
+width:180px;
+height:180px;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+.gallery img{
+height:260px;
+}
+
 }
 </style>
 </head>
@@ -91,60 +144,76 @@ h1{font-size:31px}
 
 <header>
 
-<img src="rafet.jpeg" alt="Rafet Ustam Spor Kulübü logosu">
+<img class="logo" src="rafet.jpeg" alt="Rafet Ustam Spor Kulübü">
 
 <h1>Rafet Ustam Spor Kulübü</h1>
 
 <p>Güç • Disiplin • Mücadele</p>
 
-<a class="btn" href="tel:+905301748341">Bizi Ara</a>
+<a class="btn" href="tel:+905301748341">
+Bizi Ara
+</a>
 
-<a class="btn" href="https://wa.me/905301748341">WhatsApp</a>
+<a class="btn" href="https://wa.me/905301748341">
+WhatsApp
+</a>
 
 </header>
 
-<main class="wrap">
+
+<main class="container">
 
 <h2>Branşlarımız</h2>
 
 <div class="cards">
 
 <div class="card">
+
 <h3>🥋 Kyokushin Karate</h3>
+
 <p>
 <strong>Kyokushin Türkiye Temsilciliği</strong><br>
 Geleneksel Kyokushin karate eğitimi, teknik, kondisyon ve mücadele disiplini.
 </p>
+
 </div>
 
+
 <div class="card">
+
 <h3>🥊 Kickboks / Muay Thai</h3>
+
 <p>
 Teknik, kondisyon ve disiplin odaklı antrenmanlar.
 </p>
+
 </div>
 
 </div>
+
 
 <h2>Galeri</h2>
 
 <div class="gallery">
 
-<img src="16.jpeg" alt="Kulüp antrenmanı">
+<img src="16.jpeg" alt="Rafet Ustam Spor Kulübü">
 
-<img src="IMG-20240823-WA0026.jpg" alt="Kulüp fotoğrafı">
+<img src="IMG-20240823-WA0026.jpg" alt="Rafet Ustam Spor Kulübü">
 
-<img src="WhatsApp%20Image%202026-09-24%20at%2013.00.56.jpeg" alt="Yeni kulüp fotoğrafı">
+<img src="WhatsApp%20Image%202026-09-24%20at%2013.00.56.jpeg" alt="Rafet Ustam Spor Kulübü">
 
-<img src="WhatsApp%20Image%202026-09-04%20at%2012.25.57.jpeg" alt="Kulüp afişi">
+<img src="WhatsApp%20Image%202026-09-04%20at%2012.25.57.jpeg" alt="Rafet Ustam Spor Kulübü">
 
 </div>
 
+
 <h2>İletişim</h2>
+
+<div class="contact">
 
 <p>
 Telefon:
-<a href="tel:+905301748341" style="color:#fff">
+<a href="tel:+905301748341">
 +90 530 174 83 41
 </a>
 </p>
@@ -153,7 +222,16 @@ Telefon:
 WhatsApp'tan Yaz
 </a>
 
+</div>
+
 </main>
+
+
+<footer>
+
+Rafet Ustam Spor Kulübü
+
+</footer>
 
 </body>
 </html>
