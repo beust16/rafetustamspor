@@ -112,12 +112,7 @@ Teknik, kondisyon ve disiplin odaklı antrenmanlar.
 </p>
 </div>
 
-<div class="card">
-<h3>🏋️ Fitness</h3>
-<p>
-Kuvvet, kondisyon ve genel fiziksel hazırlık.
-</p>
-</div>
+
 
 </div>
 
