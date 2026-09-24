@@ -81,7 +81,7 @@ h1{font-size:31px}
 </style>
 </head>
 
-<body>
+
 
 <header>
 <h1>Rafet Ustam Spor Kulübü</h1>
